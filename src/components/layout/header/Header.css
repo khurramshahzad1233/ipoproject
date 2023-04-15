@@ -1,0 +1,302 @@
+
+.navbar,.registernavbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 23px;
+    right: 278px;    
+}
+
+
+.navbar a, .subroutehead>span{
+    padding: 5px 10px;
+    font-family: "Poppins";
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    
+}
+.navbarmain a:hover , .subroutehead>span:hover{
+    border-top: 2px solid #F8BC4E;
+    color:#F8BC4E;
+}
+.drawarbtn{
+    font-size: 2rem;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: none;
+    z-index: 10000;
+}
+.backdrop{
+    background-color: rgba(128, 128, 128, 0.87);
+    position: absolute;
+    min-height: 100vh;
+    min-width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+    visibility: visible;
+}
+.closebackdrop{
+    visibility: collapse;
+    transition: all 0.5s ease-in-out;
+}
+.burgermenu{
+    transform: translateX(0%);
+    background-color: white;
+    width: 300px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    transition: all 0.6s ease-in-out;
+    overflow:scroll;
+    
+    
+}
+.closemenu{
+    transform: translateX(-100%);
+    transition: all 0.4s ease-in-out;
+
+}
+
+
+.closeburgersubroute{
+    display: none;
+
+}
+.burgerroutediv{
+    display: block;
+    padding: 14px 2px 0px 73px
+
+}
+.emaildiv{
+    padding: 22px 20px 22px 0px;
+    border-bottom: 1px solid silver;
+    text-align: center;
+    background-color: var(--mediumgray);
+    color: white;
+
+}
+.singleburgerelement{
+    border-bottom: 1px solid silver;
+    padding: 15px 5px 15px 25px;
+}
+.burgerroutehead{
+    
+    border-bottom: 1px solid silver;
+}
+.burgerroutehead>div:nth-child(1){
+    padding: 15px 5px 15px 26px;
+    color: blue;
+}
+.burgerroutehead>div:nth-child(1):hover{
+   
+    background-color: aliceblue;
+}
+.burgerdivall{
+    padding: 5px 20px;
+}
+.burgerroutehead>span>svg{
+    font-size: 1.3rem;
+    position: relative;
+    top: 7px;
+}
+.burgerroutediv>div{
+    padding: 10px
+}
+.blue{
+    background-color: var(--blue);
+}
+.subroutediv>div>a{
+    font-size: 1rem;
+}
+.subroutediv>div{
+    padding: 10px;
+   
+}
+.subroutediv>div:hover{
+    background-color: aliceblue;
+}
+
+
+.hideroutediv{
+    display: none;
+}
+.singleburgerelement:hover{
+    background-color:var(--blue);
+    border-radius: 5px;
+}
+.singleburgerelement:hover>a{
+    color: white;
+}
+
+.burgerroutediv>div:hover{
+    
+    border-radius: 5px;
+    
+}
+.burgerroutehead>div>svg{
+    position: relative;
+    top: 4px;
+    left: 5px;
+    font-size: 1.2rem;
+}
+.emaildiv>p{
+    padding: 0 12px 0px 0px;
+    font-size: 1.2rem;
+}
+.singleburgerelement>a{
+    color:black;
+    padding: 14px 23px 14px 28px;
+}
+.burgerroutediv>div>a{
+    color: blue;
+}
+.selected>a{
+    border-top: 2px solid #F8BC4E;;
+    color:#F8BC4E;;
+}
+.homenavbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 64px;
+    align-items: center;
+    z-index: 1000;
+    width: 100vw;
+    
+}
+.homebtn1>a>button{
+    position: absolute;
+    padding: 5px 25px;
+    border-radius: 44px;
+    top: 14px;
+    background: linear-gradient(261.84deg, #F8BC4E 30.58%, #F14990 81.26%, rgba(72, 20, 44, 0.81) 136.94%);
+    right: 92px;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 15px;
+}
+.registernavbar a{
+    padding: 5px 10px;
+    font-family: "Poppins";
+    font-size: 16px;
+    color:black;
+    font-weight: 500;
+}
+.productnavbar{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    /* top: 23px; */
+    /* right: 278px; */
+    background: rgba(245, 245, 245, 1);
+    ;
+    right: 0;
+    padding: 14px 0px 14px 65px;
+    box-shadow: 1px 1px 4px 2px silver;
+    border-radius: 5px;
+    top: 0%;
+    z-index: 9999;
+}
+.noneproduct{
+    display: none;
+}
+.productlogin{
+    width: 137px;
+    display: flex;
+    position: absolute;
+    top: 3px;
+    right: 15px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+.productlogin>div:nth-child(1)>p{
+    font-size: 12px;
+    color: var(--darkgray);
+   
+}
+.productlogin>div:nth-child(2)>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.productlogin>div:nth-child(2){
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:520px) {
+    .drawarbtn{
+        display: block;
+        position: fixed;
+    }
+    .navbar{
+        display: none;
+    }
+    .registernavbar{
+        display: none;
+    }
+    .logo{
+        
+        display: none;  
+    }
+    .homenavbar{
+        display: none;
+    }
+    .navcontainer{
+        border-bottom: unset;
+    }
+    .active{
+        background-color: unset;
+    }
+    .homebtn1>a>button{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:925px) {
+    
+    .homebtn1>a>button{
+        top: 25px;
+        right: 44px;
+    }
+    .navbar,.registernavbar{
+        right: 188px;
+        top: 30px;
+    }
+    .homesec1>div>div:nth-child(1)>img {
+        width: 200px;
+        height: 140px;
+        
+    }
+    
+}
+@media screen and (max-width:750px) {
+    .homebtn1>a>button{
+        padding: 3px 10px 3px 10px;
+        font-size: 13px;
+       
+    }
+    .homesec1>div>div:nth-child(1)>img {
+        width: 140px;
+        height: 112px;
+    }
+    .navbar,.registernavbar {
+        right: 140px;
+        top: 30px;
+    }
+    
+    
+}
